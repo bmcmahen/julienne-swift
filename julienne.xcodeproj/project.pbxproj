@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,13 @@
 		E94FC5C522C544EE00AE96C6 /* julienneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5C422C544EE00AE96C6 /* julienneTests.swift */; };
 		E94FC5D022C544EE00AE96C6 /* julienneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5CF22C544EE00AE96C6 /* julienneUITests.swift */; };
 		E94FC5DE22C5463B00AE96C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */; };
+		E94FC5E022C549A000AE96C6 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5DF22C549A000AE96C6 /* AuthenticationView.swift */; };
+		E94FC5E222C549F800AE96C6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5E122C549F800AE96C6 /* CustomButton.swift */; };
+		E94FC5E422C54A8700AE96C6 /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5E322C54A8700AE96C6 /* CustomInput.swift */; };
+		E94FC5E622C54C7C00AE96C6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5E522C54C7C00AE96C6 /* Session.swift */; };
+		E94FC5E822C550A500AE96C6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5E722C550A500AE96C6 /* AppView.swift */; };
+		E94FC5EA22C553E100AE96C6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5E922C553E100AE96C6 /* SearchBar.swift */; };
+		E94FC5EC22C5575000AE96C6 /* InlineAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5EB22C5575000AE96C6 /* InlineAlert.swift */; };
 		F7A3E6E09A89ED953F746940 /* Pods_julienneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D95057AE3FB542124EA5113 /* Pods_julienneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +69,13 @@
 		E94FC5CF22C544EE00AE96C6 /* julienneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = julienneUITests.swift; sourceTree = "<group>"; };
 		E94FC5D122C544EE00AE96C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E94FC5DF22C549A000AE96C6 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		E94FC5E122C549F800AE96C6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E94FC5E322C54A8700AE96C6 /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
+		E94FC5E522C54C7C00AE96C6 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E94FC5E722C550A500AE96C6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		E94FC5E922C553E100AE96C6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E94FC5EB22C5575000AE96C6 /* InlineAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAlert.swift; sourceTree = "<group>"; };
 		F4D153684E5C7A6DC3FE615F /* Pods-julienneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneTests.release.xcconfig"; path = "Target Support Files/Pods-julienneTests/Pods-julienneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +117,6 @@
 				76108A97025D073477634B45 /* Pods-julienneUITests.debug.xcconfig */,
 				315A2D28721334B3780AE2C6 /* Pods-julienneUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +158,13 @@
 				E94FC5AD22C544EB00AE96C6 /* AppDelegate.swift */,
 				E94FC5AF22C544EB00AE96C6 /* SceneDelegate.swift */,
 				E94FC5B122C544EB00AE96C6 /* ContentView.swift */,
+				E94FC5E722C550A500AE96C6 /* AppView.swift */,
+				E94FC5E922C553E100AE96C6 /* SearchBar.swift */,
+				E94FC5DF22C549A000AE96C6 /* AuthenticationView.swift */,
+				E94FC5EB22C5575000AE96C6 /* InlineAlert.swift */,
+				E94FC5E522C54C7C00AE96C6 /* Session.swift */,
+				E94FC5E122C549F800AE96C6 /* CustomButton.swift */,
+				E94FC5E322C54A8700AE96C6 /* CustomInput.swift */,
 				E94FC5B322C544EE00AE96C6 /* Assets.xcassets */,
 				E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */,
 				E94FC5B822C544EE00AE96C6 /* LaunchScreen.storyboard */,
@@ -420,9 +440,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94FC5E622C54C7C00AE96C6 /* Session.swift in Sources */,
+				E94FC5EC22C5575000AE96C6 /* InlineAlert.swift in Sources */,
 				E94FC5AE22C544EB00AE96C6 /* AppDelegate.swift in Sources */,
 				E94FC5B022C544EB00AE96C6 /* SceneDelegate.swift in Sources */,
 				E94FC5B222C544EB00AE96C6 /* ContentView.swift in Sources */,
+				E94FC5E822C550A500AE96C6 /* AppView.swift in Sources */,
+				E94FC5EA22C553E100AE96C6 /* SearchBar.swift in Sources */,
+				E94FC5E022C549A000AE96C6 /* AuthenticationView.swift in Sources */,
+				E94FC5E222C549F800AE96C6 /* CustomButton.swift in Sources */,
+				E94FC5E422C54A8700AE96C6 /* CustomInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
