@@ -19,7 +19,7 @@ struct ContentView : View {
     var body: some View {
         Group {
             if (session.isLoggedIn) {
-                Text("hello world")
+                AppView()
             } else {
                 AuthenticationScreen()
             }

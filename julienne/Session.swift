@@ -55,6 +55,10 @@ class SessionStore : BindableObject {
         }
     }
     
+    func signInWithGoogle () {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
     func signOut () -> Bool {
         do {
             try Auth.auth().signOut()

@@ -131,6 +131,7 @@ struct SignInView : View {
             
             Group {
                 Divider()
+               
                 
                 CustomInput(value: $email, placeholder: "Email address")
                     .padding()
