@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B8453604DB1972D4C84388B /* Pods_julienneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9949F2BF890E754BA5026496 /* Pods_julienneUITests.framework */; };
+		745ECA37135CA4B582EE7346 /* Pods_julienne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0760EFB9D26064ED403BF8D8 /* Pods_julienne.framework */; };
 		E94FC5AE22C544EB00AE96C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5AD22C544EB00AE96C6 /* AppDelegate.swift */; };
 		E94FC5B022C544EB00AE96C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5AF22C544EB00AE96C6 /* SceneDelegate.swift */; };
 		E94FC5B222C544EB00AE96C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5B122C544EB00AE96C6 /* ContentView.swift */; };
@@ -15,6 +17,8 @@
 		E94FC5BA22C544EE00AE96C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94FC5B822C544EE00AE96C6 /* LaunchScreen.storyboard */; };
 		E94FC5C522C544EE00AE96C6 /* julienneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5C422C544EE00AE96C6 /* julienneTests.swift */; };
 		E94FC5D022C544EE00AE96C6 /* julienneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94FC5CF22C544EE00AE96C6 /* julienneUITests.swift */; };
+		E94FC5DE22C5463B00AE96C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */; };
+		F7A3E6E09A89ED953F746940 /* Pods_julienneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D95057AE3FB542124EA5113 /* Pods_julienneTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0760EFB9D26064ED403BF8D8 /* Pods_julienne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_julienne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		315A2D28721334B3780AE2C6 /* Pods-julienneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneUITests.release.xcconfig"; path = "Target Support Files/Pods-julienneUITests/Pods-julienneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D95057AE3FB542124EA5113 /* Pods_julienneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_julienneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76108A97025D073477634B45 /* Pods-julienneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneUITests.debug.xcconfig"; path = "Target Support Files/Pods-julienneUITests/Pods-julienneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9949F2BF890E754BA5026496 /* Pods_julienneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_julienneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B455A4082920ED2BC2E85 /* Pods-julienneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneTests.debug.xcconfig"; path = "Target Support Files/Pods-julienneTests/Pods-julienneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C44EC2750FCE1831781A1B0F /* Pods-julienne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienne.release.xcconfig"; path = "Target Support Files/Pods-julienne/Pods-julienne.release.xcconfig"; sourceTree = "<group>"; };
+		D1CC5320B3C1E56788DC5262 /* Pods-julienne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienne.debug.xcconfig"; path = "Target Support Files/Pods-julienne/Pods-julienne.debug.xcconfig"; sourceTree = "<group>"; };
 		E94FC5AA22C544EB00AE96C6 /* julienne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = julienne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94FC5AD22C544EB00AE96C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94FC5AF22C544EB00AE96C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,8 @@
 		E94FC5CB22C544EE00AE96C6 /* julienneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = julienneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94FC5CF22C544EE00AE96C6 /* julienneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = julienneUITests.swift; sourceTree = "<group>"; };
 		E94FC5D122C544EE00AE96C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4D153684E5C7A6DC3FE615F /* Pods-julienneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneTests.release.xcconfig"; path = "Target Support Files/Pods-julienneTests/Pods-julienneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745ECA37135CA4B582EE7346 /* Pods_julienne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A3E6E09A89ED953F746940 /* Pods_julienneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8453604DB1972D4C84388B /* Pods_julienneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A6319A0DEABCF3B01E15FDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC5320B3C1E56788DC5262 /* Pods-julienne.debug.xcconfig */,
+				C44EC2750FCE1831781A1B0F /* Pods-julienne.release.xcconfig */,
+				997B455A4082920ED2BC2E85 /* Pods-julienneTests.debug.xcconfig */,
+				F4D153684E5C7A6DC3FE615F /* Pods-julienneTests.release.xcconfig */,
+				76108A97025D073477634B45 /* Pods-julienneUITests.debug.xcconfig */,
+				315A2D28721334B3780AE2C6 /* Pods-julienneUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4EB64CE6648EB795953AB35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0760EFB9D26064ED403BF8D8 /* Pods_julienne.framework */,
+				3D95057AE3FB542124EA5113 /* Pods_julienneTests.framework */,
+				9949F2BF890E754BA5026496 /* Pods_julienneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E94FC5A122C544EB00AE96C6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +124,8 @@
 				E94FC5C322C544EE00AE96C6 /* julienneTests */,
 				E94FC5CE22C544EE00AE96C6 /* julienneUITests */,
 				E94FC5AB22C544EB00AE96C6 /* Products */,
+				7A6319A0DEABCF3B01E15FDD /* Pods */,
+				C4EB64CE6648EB795953AB35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +146,7 @@
 				E94FC5AF22C544EB00AE96C6 /* SceneDelegate.swift */,
 				E94FC5B122C544EB00AE96C6 /* ContentView.swift */,
 				E94FC5B322C544EE00AE96C6 /* Assets.xcassets */,
+				E94FC5DD22C5463B00AE96C6 /* GoogleService-Info.plist */,
 				E94FC5B822C544EE00AE96C6 /* LaunchScreen.storyboard */,
 				E94FC5BB22C544EE00AE96C6 /* Info.plist */,
 				E94FC5B522C544EE00AE96C6 /* Preview Content */,
@@ -143,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94FC5D422C544EE00AE96C6 /* Build configuration list for PBXNativeTarget "julienne" */;
 			buildPhases = (
+				47E1923766AC2C343EA21AE8 /* [CP] Check Pods Manifest.lock */,
 				E94FC5A622C544EB00AE96C6 /* Sources */,
 				E94FC5A722C544EB00AE96C6 /* Frameworks */,
 				E94FC5A822C544EB00AE96C6 /* Resources */,
+				C3B38226F7027730469BF717 /* [CP] Embed Pods Frameworks */,
+				E22F14D2E1007CA27B3462A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94FC5D722C544EE00AE96C6 /* Build configuration list for PBXNativeTarget "julienneTests" */;
 			buildPhases = (
+				358AB3C447086FB759A1FFD2 /* [CP] Check Pods Manifest.lock */,
 				E94FC5BC22C544EE00AE96C6 /* Sources */,
 				E94FC5BD22C544EE00AE96C6 /* Frameworks */,
 				E94FC5BE22C544EE00AE96C6 /* Resources */,
@@ -178,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94FC5DA22C544EE00AE96C6 /* Build configuration list for PBXNativeTarget "julienneUITests" */;
 			buildPhases = (
+				9AC970C15415F81FCF7A4F4A /* [CP] Check Pods Manifest.lock */,
 				E94FC5C722C544EE00AE96C6 /* Sources */,
 				E94FC5C822C544EE00AE96C6 /* Frameworks */,
 				E94FC5C922C544EE00AE96C6 /* Resources */,
@@ -241,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94FC5BA22C544EE00AE96C6 /* LaunchScreen.storyboard in Resources */,
+				E94FC5DE22C5463B00AE96C6 /* GoogleService-Info.plist in Resources */,
 				E94FC5B722C544EE00AE96C6 /* Preview Assets.xcassets in Resources */,
 				E94FC5B422C544EE00AE96C6 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +311,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		358AB3C447086FB759A1FFD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-julienneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47E1923766AC2C343EA21AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-julienne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC970C15415F81FCF7A4F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-julienneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B38226F7027730469BF717 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22F14D2E1007CA27B3462A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-julienne/Pods-julienne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E94FC5A622C544EB00AE96C6 /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		E94FC5D522C544EE00AE96C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CC5320B3C1E56788DC5262 /* Pods-julienne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +605,7 @@
 		};
 		E94FC5D622C544EE00AE96C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44EC2750FCE1831781A1B0F /* Pods-julienne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +625,7 @@
 		};
 		E94FC5D822C544EE00AE96C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 997B455A4082920ED2BC2E85 /* Pods-julienneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +646,7 @@
 		};
 		E94FC5D922C544EE00AE96C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D153684E5C7A6DC3FE615F /* Pods-julienneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +667,7 @@
 		};
 		E94FC5DB22C544EE00AE96C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76108A97025D073477634B45 /* Pods-julienneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +687,7 @@
 		};
 		E94FC5DC22C544EE00AE96C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315A2D28721334B3780AE2C6 /* Pods-julienneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
