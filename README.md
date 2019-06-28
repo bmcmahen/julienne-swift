@@ -15,6 +15,12 @@ Note that all of the information pertaining to security rules are contained in t
 
 This is a WIP, so please check back soon for more updates. 
 
+## Blog posts:
+
+I'll be writing a number of blog posts which explain some of the code that goes into this project. [Follow me on Twitter](https://twitter.com/BenMcMahen) to find out when new posts are made.
+
+- __[Using Firebase Authentication with SwiftUI](https://benmcmahen.com/authentication-with-swiftui-and-firebase/)__
+
 ## Test account:
 
 email: randomtestuser@gmail.com
