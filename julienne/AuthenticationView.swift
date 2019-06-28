@@ -116,9 +116,9 @@ struct SignInView : View {
                 Image("julienne-logo")
                     .resizable()
                     .frame(width: 75, height: 75)
-                
+
                 Text("Julienne").font(.title).padding(.bottom)
-                
+
                 Text("The easiest way to save, search, and save recipes with family and friends.")
                     .font(.subheadline)
                     .color(.gray)
@@ -126,12 +126,13 @@ struct SignInView : View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
             }
-            
+
             Spacer()
             
             Group {
                 Divider()
                
+            
                 
                 CustomInput(value: $email, placeholder: "Email address")
                     .padding()
@@ -147,6 +148,8 @@ struct SignInView : View {
                         ).padding([.horizontal, .top])
                     
                 }
+                
+
                 
                 CustomButton(
                     label: "Sign in",

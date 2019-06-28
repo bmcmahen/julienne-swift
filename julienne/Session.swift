@@ -16,11 +16,11 @@ import GoogleSignIn
 // https://firebase.google.com/docs/auth/ios/google-signin
 
 class User {
-    let uid: String
-    let email: String?
-    let photoURL: URL?
-    let displayName: String?
-    
+    var uid: String
+    var email: String?
+    var photoURL: URL?
+    var displayName: String?
+
     init(uid: String, displayName: String?, email: String?, photoURL: URL?) {
         self.uid = uid
         self.email = email
@@ -28,6 +28,8 @@ class User {
         self.displayName = displayName
     }
 }
+
+
 
 /**
  * SessionStore manages the firebase user session. It contains the current user. It
@@ -51,6 +53,9 @@ class SessionStore : BindableObject {
                     email: user.email,
                     photoURL: user.photoURL
                 )
+            } else {
+                self.isLoggedIn = false
+                self.session = nil
             }
         }
     }
@@ -62,8 +67,8 @@ class SessionStore : BindableObject {
     func signOut () -> Bool {
         do {
             try Auth.auth().signOut()
-            self.isLoggedIn = false
-            self.session = nil
+//            self.isLoggedIn = false
+//            self.session = nil
             return true
         } catch {
             return false

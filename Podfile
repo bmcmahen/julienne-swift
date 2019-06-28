@@ -12,6 +12,7 @@ target 'julienne' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
   pod 'GoogleSignIn'
+  pod 'CodableFirebase'
 
   target 'julienneTests' do
     inherit! :search_paths

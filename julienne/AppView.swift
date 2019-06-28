@@ -13,17 +13,24 @@ enum Tabs {
 }
 
 struct AppView : View {
+    @EnvironmentObject var session: SessionStore
     
     @State var tab: Tabs = .recipes
     @State var query = ""
     
     var body: some View {
-        NavigationView {
-            List {
-                Section(header: SearchBar(text: $query)) {
-                    Text("okay then")
-                }
+        
+        
+        return NavigationView {
+       
+            RecipeListView(userId: session.session!.uid)
+        
+            Button(action: {
+                self.session.signOut()
+            }) {
+            Text("sign out")
             }
+          
         }.navigationBarTitle(Text("Julienne"))
     }
 }
@@ -32,6 +39,7 @@ struct AppView : View {
 struct AppView_Previews : PreviewProvider {
     static var previews: some View {
         AppView()
+            .environmentObject(SessionStore())
     }
 }
 #endif

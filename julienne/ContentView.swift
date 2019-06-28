@@ -18,7 +18,7 @@ struct ContentView : View {
     
     var body: some View {
         Group {
-            if (session.isLoggedIn) {
+            if (session.session != nil) {
                 AppView()
             } else {
                 AuthenticationScreen()
