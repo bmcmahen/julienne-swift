@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import Firebase
 
-class Ingredient {
+struct Ingredient {
     var amount: String
     var name: String
     
@@ -20,20 +20,20 @@ class Ingredient {
     }
 }
 
-class Recipe : Identifiable {
+struct Recipe : Identifiable {
     var id: String
     var author: String
     var title: String
     var image: String?
     
-//    var ingredients: [Ingredient]
 
-//    var updatedAt: String
-//    var userId: String
-//    var plain: String
-//    var description: String
+    static let `default` = Self(
+        id: "sdfdsaf",
+        author: "Ben McMahen",
+        title: "Spaghetti Puttanesca"
+    )
     
-    init(id: String, author: String, title: String, image: String?) {
+    init(id: String, author: String, title: String, image: String? = nil) {
         self.id = id
         self.author = author
         self.title = title
@@ -46,6 +46,10 @@ class RecipeStore : BindableObject {
     var didChange = PassthroughSubject<RecipeStore, Never>()
     var recipes: [Recipe] = [] {
         didSet { self.didChange.send(self) }
+    }
+    
+    init(recipes: [Recipe] = []) {
+        self.recipes = recipes
     }
     
     func fetch (userId: String) {

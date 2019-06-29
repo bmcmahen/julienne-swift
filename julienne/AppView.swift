@@ -8,14 +8,10 @@
 
 import SwiftUI
 
-enum Tabs {
-    case recipes, following, followers
-}
 
 struct AppView : View {
     @EnvironmentObject var session: SessionStore
     @ObjectBinding var recipeStore = RecipeStore()
-    @State var tab: Tabs = .recipes
     @State var query = ""
     
     
@@ -33,10 +29,10 @@ struct AppView : View {
             List {
                 Section() {
                     NavigationButton(destination: Text("Hello")) {
-                        Text("Following").fontWeight(.bold).padding(.vertical)
+                        Text("Following").fontWeight(.semibold).padding(.vertical)
                     }
                     NavigationButton(destination: Text("Hello")) {
-                        Text("Followers").fontWeight(.bold).padding(.vertical)
+                        Text("Followers").fontWeight(.semibold).padding(.vertical)
                     }
                 }
                 
@@ -73,7 +69,7 @@ struct AppView : View {
 #if DEBUG
 struct AppView_Previews : PreviewProvider {
     static var previews: some View {
-        AppView()
+        AppView(recipeStore: RecipeStore(recipes: [Recipe.default]))
             .environmentObject(SessionStore(session: User.default))
     }
 }

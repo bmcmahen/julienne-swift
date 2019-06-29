@@ -14,7 +14,7 @@ struct RecipeListItem : View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(verbatim: recipe.title).fontWeight(.bold)
+                Text(verbatim: recipe.title).fontWeight(.semibold)
                 Text(recipe.author).font(.subheadline).color(.gray)
             }
             Spacer()
