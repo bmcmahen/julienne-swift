@@ -52,11 +52,20 @@ struct AppView : View {
                     
                     },
                     
-                    trailing: PresentationButton(destination: ComposeRecipe()) {
-                        Image(systemName: "square.and.pencil")
-                            .imageScale(.large)
-                            .accessibility(label: Text("Add recipe"))
-                                        
+                    trailing: HStack(spacing: 24) {
+                        Button(action: { print("search") }) {
+                            Image(systemName: "magnifyingglass")
+                                .imageScale(.large)
+                                .accessibility(label: Text("search recipes"))
+                            
+                        }
+                        PresentationButton(destination: ComposeRecipe()) {
+                            Image(systemName: "square.and.pencil")
+                                .imageScale(.large)
+                                .accessibility(label: Text("Add recipe"))
+                            
+                        }
+                      
                     }
             )
             
