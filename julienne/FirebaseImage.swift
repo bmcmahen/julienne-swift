@@ -7,52 +7,52 @@
 //
 
 import SwiftUI
+import Combine
 
 import FirebaseStorage
 
-struct FirebaseImage : View {
+final class Loader : BindableObject {
+    let didChange = PassthroughSubject<Data?, Never>()
+    var data: Data? = nil {
+        didSet { didChange.send(data) }
+    }
     
-    var id: String
-    @State var image: UIImage?
-    
-    func fetch () {
+    init(_ id: String){
         let url = "images/thumb-sm@\(id)"
         let storage = Storage.storage()
-        let ref = storage.reference()
-        
-        let imageRef = ref.child(url)
-        
-        print("fetch for url: \(url)")
-        
-        imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+        let ref = storage.reference().child(url)
+        ref.getData(maxSize: 1 * 1024 * 1024) { data, error in
             if let error = error {
-                print("ERROR")
-            } else {
-                
-                print("GOT DATA")
-                if let data = data {
-                    guard let image = UIImage(data: data) else {
-                        print("no image...")
-                        return
-                    }
-
-                    self.image = image
-                } else {
-                    print("No data?")
-                }
+                print("\(error)")
+            }
+            
+            DispatchQueue.main.async {
+                self.data = data
             }
         }
     }
+}
+
+let placeholder = UIImage(named: "placeholder.jpg")!
+
+struct FirebaseImage : View {
     
+    init(id: String) {
+        self.imageLoader = Loader(id)
+    }
+    
+    @ObjectBinding private var imageLoader : Loader
+    
+    var image: UIImage? {
+        imageLoader.data.flatMap(UIImage.init)
+    }
+  
     var body: some View {
-        Group {
-            if (image == nil) {
-                Image(systemName: "clear")
-            } else {
-                Image(uiImage: self.image!)
-            }
+        Image(uiImage: image ?? placeholder)
+            .resizable()
+              .aspectRatio(contentMode: .fill)
+            .frame(width: 50, height: 50)
         
-        }.onAppear(perform: fetch)
     }
 }
 

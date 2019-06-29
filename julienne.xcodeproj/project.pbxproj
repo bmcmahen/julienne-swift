@@ -28,6 +28,8 @@
 		E9843E8C22C6BDB6004786C2 /* RecipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9843E8B22C6BDB6004786C2 /* RecipeStore.swift */; };
 		E9843E8E22C6BFFF004786C2 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9843E8D22C6BFFF004786C2 /* RecipeListView.swift */; };
 		E9843E9022C6CF2C004786C2 /* FirebaseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9843E8F22C6CF2C004786C2 /* FirebaseImage.swift */; };
+		E9843E9222C72234004786C2 /* RecipeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9843E9122C72234004786C2 /* RecipeListItem.swift */; };
+		E9843E9422C7286A004786C2 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9843E9322C72869004786C2 /* RecipeDetailView.swift */; };
 		F7A3E6E09A89ED953F746940 /* Pods_julienneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D95057AE3FB542124EA5113 /* Pods_julienneTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		E9843E8B22C6BDB6004786C2 /* RecipeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStore.swift; sourceTree = "<group>"; };
 		E9843E8D22C6BFFF004786C2 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		E9843E8F22C6CF2C004786C2 /* FirebaseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImage.swift; sourceTree = "<group>"; };
+		E9843E9122C72234004786C2 /* RecipeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListItem.swift; sourceTree = "<group>"; };
+		E9843E9322C72869004786C2 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		F4D153684E5C7A6DC3FE615F /* Pods-julienneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-julienneTests.release.xcconfig"; path = "Target Support Files/Pods-julienneTests/Pods-julienneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,8 @@
 				E94FC5B122C544EB00AE96C6 /* ContentView.swift */,
 				E94FC5E722C550A500AE96C6 /* AppView.swift */,
 				E9843E8D22C6BFFF004786C2 /* RecipeListView.swift */,
+				E9843E9322C72869004786C2 /* RecipeDetailView.swift */,
+				E9843E9122C72234004786C2 /* RecipeListItem.swift */,
 				E9843E8F22C6CF2C004786C2 /* FirebaseImage.swift */,
 				E9843E8B22C6BDB6004786C2 /* RecipeStore.swift */,
 				E94FC5E922C553E100AE96C6 /* SearchBar.swift */,
@@ -450,11 +456,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94FC5E622C54C7C00AE96C6 /* Session.swift in Sources */,
+				E9843E9422C7286A004786C2 /* RecipeDetailView.swift in Sources */,
 				E94FC5EC22C5575000AE96C6 /* InlineAlert.swift in Sources */,
 				E94FC5AE22C544EB00AE96C6 /* AppDelegate.swift in Sources */,
 				E94FC5B022C544EB00AE96C6 /* SceneDelegate.swift in Sources */,
 				E94FC5B222C544EB00AE96C6 /* ContentView.swift in Sources */,
 				E94FC5E822C550A500AE96C6 /* AppView.swift in Sources */,
+				E9843E9222C72234004786C2 /* RecipeListItem.swift in Sources */,
 				E9843E9022C6CF2C004786C2 /* FirebaseImage.swift in Sources */,
 				E9843E8E22C6BFFF004786C2 /* RecipeListView.swift in Sources */,
 				E9843E8C22C6BDB6004786C2 /* RecipeStore.swift in Sources */,

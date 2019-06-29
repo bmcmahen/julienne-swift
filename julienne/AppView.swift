@@ -24,14 +24,10 @@ struct AppView : View {
         return NavigationView {
        
             RecipeListView(userId: session.session!.uid)
+                .navigationBarTitle(Text("Julienne"))
         
-            Button(action: {
-                self.session.signOut()
-            }) {
-            Text("sign out")
-            }
           
-        }.navigationBarTitle(Text("Julienne"))
+        }
     }
 }
 

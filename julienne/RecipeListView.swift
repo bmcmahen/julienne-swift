@@ -23,11 +23,8 @@ struct RecipeListView : View {
         
         List {
             ForEach(recipeStore.recipes) { recipe in
-                VStack {
-                    Text("\(recipe.title)").font(.title)
-                    if (recipe.image != nil) {
-                        FirebaseImage(id: recipe.image!)
-                    }
+                NavigationButton(destination: RecipeDetailView(recipe: recipe)) {
+                    RecipeListItem(recipe: recipe)
                 }
             }
         }.onAppear(perform: fetchRecipes)
