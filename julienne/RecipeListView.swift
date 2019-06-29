@@ -21,13 +21,14 @@ struct RecipeListView : View {
 
     var body: some View {
         
-        List {
+        Group {
             ForEach(recipeStore.recipes) { recipe in
                 NavigationButton(destination: RecipeDetailView(recipe: recipe)) {
                     RecipeListItem(recipe: recipe)
                 }
             }
         }.onAppear(perform: fetchRecipes)
+    
         
         
     }

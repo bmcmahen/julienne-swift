@@ -15,11 +15,18 @@ import GoogleSignIn
 // TODO: Google sign in:
 // https://firebase.google.com/docs/auth/ios/google-signin
 
-class User {
+struct User {
     var uid: String
     var email: String?
     var photoURL: URL?
     var displayName: String?
+    
+    static let `default` = Self(
+        uid: "sdfdsaf",
+        displayName: "Ben McMahen",
+        email: "ben.mcmahen@gmail.com",
+        photoURL: nil
+    )
 
     init(uid: String, displayName: String?, email: String?, photoURL: URL?) {
         self.uid = uid
@@ -41,6 +48,10 @@ class SessionStore : BindableObject {
     var isLoggedIn = false { didSet { self.didChange.send(self) }}
     var session: User? { didSet { self.didChange.send(self) }}
     var handle: AuthStateDidChangeListenerHandle?
+    
+    init(session: User? = nil) {
+        self.session = session
+    }
     
     func listen () {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in

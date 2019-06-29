@@ -14,20 +14,59 @@ enum Tabs {
 
 struct AppView : View {
     @EnvironmentObject var session: SessionStore
-    
+    @ObjectBinding var recipeStore = RecipeStore()
     @State var tab: Tabs = .recipes
     @State var query = ""
+    
+    
+    func fetchRecipes () {
+        print("Fetching recipes")
+        recipeStore.fetch(userId: self.session.session!.uid)
+    }
+
     
     var body: some View {
         
         
         return NavigationView {
-       
-            RecipeListView(userId: session.session!.uid)
-                .navigationBarTitle(Text("Julienne"))
+            
+            List {
+                Section() {
+                    NavigationButton(destination: Text("Hello")) {
+                        Text("Following").fontWeight(.bold).padding(.vertical)
+                    }
+                    NavigationButton(destination: Text("Hello")) {
+                        Text("Followers").fontWeight(.bold).padding(.vertical)
+                    }
+                }
+                
+                Section(header: Text("Your recipes")) {
+                    ForEach(recipeStore.recipes) { recipe in
+                        NavigationButton(destination: RecipeDetailView(recipe: recipe)) {
+                            RecipeListItem(recipe: recipe)
+                        }
+                    }
+                }
+            }
+                .navigationBarTitle(Text("Julienne"), displayMode: .inline)
+                .navigationBarItems(leading: PresentationButton(destination: SessionInfo()) {
+                    Image(systemName: "person.crop.circle")
+                        .imageScale(.large)
+                        .accessibility(label: Text("user profile"))
+                    
+                    },
+                    
+                    trailing: PresentationButton(destination: ComposeRecipe()) {
+                        Image(systemName: "square.and.pencil")
+                            .imageScale(.large)
+                            .accessibility(label: Text("Add recipe"))
+                                        
+                    }
+            )
+            
         
           
-        }
+            }.onAppear(perform: fetchRecipes)
     }
 }
 
@@ -35,7 +74,7 @@ struct AppView : View {
 struct AppView_Previews : PreviewProvider {
     static var previews: some View {
         AppView()
-            .environmentObject(SessionStore())
+            .environmentObject(SessionStore(session: User.default))
     }
 }
 #endif

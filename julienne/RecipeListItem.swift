@@ -20,9 +20,10 @@ struct RecipeListItem : View {
             Spacer()
             if (recipe.image != nil) {
                 FirebaseImage(id: recipe.image!)
+                    .frame(width: 50, height: 50)
                     .padding(.trailing)
             }
-        }.frame(height: 50)
+        }
     }
 }
 
