@@ -18,11 +18,11 @@ struct InputModifier : ViewModifier {
 }
 
 struct CustomInput : View {
-    @Binding var value: String
-    var placeholder: String = ""
+    @Binding var text: String
+    var name: String
     
     var body: some View {
-        TextField($value, placeholder: Text(placeholder))
+        TextField(name, text: $text)
             .modifier(InputModifier())
         
     }
@@ -32,7 +32,7 @@ struct CustomInput : View {
 struct CustomInput_Previews : PreviewProvider {
     
     static var previews: some View {
-        CustomInput(value: .constant("Some value"), placeholder: "Placeholder")
+        CustomInput(text: .constant(""), name: "Some name")
             .padding()
     }
 }

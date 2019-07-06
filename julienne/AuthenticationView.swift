@@ -40,7 +40,7 @@ struct SignUpView : View {
                 .font(.title)
                 .padding(.horizontal)
             
-            CustomInput(value: $email, placeholder: "Email address")
+            CustomInput(text: $email, name: "Email")
                 .padding()
             
             VStack(alignment: .leading) {
@@ -134,12 +134,13 @@ struct SignInView : View {
                
             
                 
-                CustomInput(value: $email, placeholder: "Email address")
+                CustomInput(text: $email, name: "Email")
                     .padding()
                 
-                SecureField($password, placeholder: Text("Password"))
+                SecureField("Password", text: $password)
                     .modifier(InputModifier())
                     .padding([.leading, .trailing])
+
                 
                 if (error) {
                     InlineAlert(
@@ -170,7 +171,9 @@ struct SignInView : View {
                         .font(.footnote)
                         .color(.gray)
                     
-                    NavigationButton(destination: SignUpView()) {
+                  
+                    
+                    NavigationLink(destination: SignUpView()) {
                         Text("Sign up.").font(.footnote)
                     }
                     }

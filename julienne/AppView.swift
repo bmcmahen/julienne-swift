@@ -28,24 +28,24 @@ struct AppView : View {
             
             List {
                 Section() {
-                    NavigationButton(destination: Text("Hello")) {
+                    NavigationLink(destination: Text("Hello")) {
                         Text("Following").fontWeight(.semibold).padding(.vertical)
                     }
-                    NavigationButton(destination: Text("Hello")) {
+                    NavigationLink(destination: Text("Hello")) {
                         Text("Followers").fontWeight(.semibold).padding(.vertical)
                     }
                 }
                 
                 Section(header: Text("Your recipes")) {
                     ForEach(recipeStore.recipes) { recipe in
-                        NavigationButton(destination: RecipeDetailView(recipe: recipe)) {
+                        NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
                             RecipeListItem(recipe: recipe)
                         }
                     }
                 }
             }
                 .navigationBarTitle(Text("Julienne"), displayMode: .inline)
-                .navigationBarItems(leading: PresentationButton(destination: SessionInfo()) {
+                .navigationBarItems(leading: PresentationLink(destination: SessionInfo().environmentObject(session)) {
                     Image(systemName: "person.crop.circle")
                         .imageScale(.large)
                         .accessibility(label: Text("user profile"))
@@ -59,7 +59,7 @@ struct AppView : View {
                                 .accessibility(label: Text("search recipes"))
                             
                         }
-                        PresentationButton(destination: ComposeRecipe()) {
+                        PresentationLink(destination: ComposeRecipe()) {
                             Image(systemName: "square.and.pencil")
                                 .imageScale(.large)
                                 .accessibility(label: Text("Add recipe"))
