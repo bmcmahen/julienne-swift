@@ -21,6 +21,8 @@ I'll be writing a number of blog posts which explain some of the code that goes 
 
 - __[Using Firebase Authentication with SwiftUI](https://benmcmahen.com/authentication-with-swiftui-and-firebase/)__
 
+- __[Displaying Firebase Images with SwiftUI](http://localhost:8000/firebase-image-in-swiftui/)__
+
 ## Test account:
 
 email: randomtestuser@gmail.com
