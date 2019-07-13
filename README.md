@@ -23,6 +23,8 @@ I'll be writing a number of blog posts which explain some of the code that goes 
 
 - __[Displaying Firebase Images with SwiftUI](https://benmcmahen.com/firebase-image-in-swiftui/)__
 
+- __[Using SwiftUI's Spacer to Create Complex Layouts](https://benmcmahen.com/using-spacer-in-swiftui/)__
+
 ## Test account:
 
 email: randomtestuser@gmail.com
